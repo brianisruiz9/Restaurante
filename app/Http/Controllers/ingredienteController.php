@@ -64,6 +64,6 @@ class ingredienteController extends Controller
              }
         }
         $tipids = Ingrediente::all();
-        return view('ingredienteview2',['msg' => $msg, 'tipids' => $tipids]);
+        return view('ingredienteview',['msg' => $msg, 'tipids' => $tipids]);
     }
 }

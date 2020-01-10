@@ -4,6 +4,9 @@
         font-weight: bold;
         font-size: 1.5em;
     }
+    #ingre{
+        background-image:url(image/ingre.jpg);
+    }
 </style>
 @extends('layouts.app')
 
@@ -18,67 +21,54 @@
         <div class="row text-center">
             <div class="col-md-4">
                 <p>Ingredientes</p>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="{{ url('/ingrediente') }}">Registrar</a></li>
-                    <li class="page-item"><a class="page-link" href="{{ url('/ingrediente2') }}">Actualizar</a></li>
-                </ul>
+                    <a class="btn btn-light" href="{{ url('/ingrediente') }}">
                     <img src="image/ingre.jpg" alt="ingrediente" width="200" height="200" class="img-responsive rounded">
+                    </a>            
             </div>
 
             <div class="col-md-4">
                 <p>Platos</p>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="{{ url('/plato') }}">Registrar</a></li>
-                    <li class="page-item"><a class="page-link" href="{{ url('/plato2') }}">Actualizar</a></li>
-                </ul>
+                    <a class="btn btn-light" href="{{ url('/plato') }}">
                     <img src="image/plato.jpg" alt="plato" width="200" height="200" class="img-responsive rounded">
+                    </a>
             </div>
 
             <div class="col-md-4">
                 <p>Ingredientes de los platos</p>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="{{ url('/platoingrediente') }}">Registrar</a></li>
-                    <li class="page-item"><a class="page-link" href="{{ url('/platoingrediente2') }}">Actualizar</a></li>
-                </ul>
-                    <img src="image/platoingrediente.jpg" alt="platoingrediente" width="200" height="200" class="img-responsive rounded">
-                
+                    <a class="btn btn-light" href="{{ url('/platoingrediente') }}">
+                        <img src="image/platoingrediente.jpg" alt="platoingrediente" width="200" height="200" class="img-responsive rounded">
+                    </a>
             </div>
         </div>
 
         <div class="row text-center">
             <div class="col-md-6">
                 <p>Ordenes</p>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="{{ url('/orden') }}">Registrar</a></li>
-                    <li class="page-item"><a class="page-link" href="{{ url('/orden2') }}">Actualizar</a></li>
-                </ul>
-                    <img src="image/orden.jpg" alt="orden" width="200" height="200" class="img-responsive rounded">
+                    <a class="btn btn-light" href="{{ url('/orden') }}">
+                        <img src="image/orden.jpg" alt="orden" width="200" height="200" class="img-responsive rounded">
+                    </a>
             </div>
 
             <div class="col-md-6">
                 <p>Ordenes de los platos</p>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="{{ url('/ordenplato') }}">Registrar</a></li>
-                    <li class="page-item"><a class="page-link" href="{{ url('/ordenplato2') }}">Actualizar</a></li>
-                </ul>
-                    <img src="image/ordenplato.jpg" alt="ordenplato" width="200" height="200" class="img-responsive rounded">
+                    <a class="btn btn-light" href="{{ url('/ordenplato') }}">
+                        <img href="" src="image/ordenplato.jpg" alt="ordenplato" width="200" height="200" class="img-responsive rounded">
+                    </a>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-md-6">
                 <p>Liquidación</p>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="{{ url('/liquidacion') }}">Entrar</a></li>
-                </ul>
-                    <img src="image/liquidacion.png" border="0" alt="liquidacion" width="200" height="200" class="img-responsive rounded">
+                    <a class="btn btn-light" href="{{ url('/liquidacion') }}">
+                        <img src="image/liquidacion.png" border="0" alt="liquidacion" width="200" height="200" class="img-responsive rounded">
+                    </a>
             </div>
 
             <div class="col-md-6">
                 <p>Ventas</p>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="{{ url('/venta') }}">Entrar</a></li>
-                </ul>
-                    <img src="image/reporte.png" border="0" alt="reporte" width="200" height="200" class="img-responsive rounded">
+                    <a class="btn btn-light" href="{{ url('/venta') }}">
+                        <img src="image/reporte.png" border="0" alt="reporte" width="200" height="200" class="img-responsive rounded">
+                    </a>
             </div>
         </div>
     </div>
