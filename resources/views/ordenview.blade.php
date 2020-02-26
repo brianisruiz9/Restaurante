@@ -6,7 +6,6 @@
     h1{
         text-align: center;
         color: tomato;
-        
     }
     #cont{
         margin-top:-8%;
